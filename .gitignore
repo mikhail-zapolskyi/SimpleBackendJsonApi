@@ -3,3 +3,4 @@
 
 #files
 yarn.lock
+.env
