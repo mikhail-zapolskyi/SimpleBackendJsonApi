@@ -1,6 +1,6 @@
 export const queryValidation = (req, res, next) => {
      const { tags, sortBy='id', direction='asc' } = req.query;
-     console.log(direction);
+     
      // VALIDATE TAGS
      if (!tags) res.status(400).json({ error: 'Tags parameter is required' });
 

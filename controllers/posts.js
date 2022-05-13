@@ -2,7 +2,8 @@ import fetch from 'node-fetch';
 
 export const getPosts = async (req, res, next) => {
      const { tags, sortBy='id', direction='asc' } = req.query;
-     console.log(direction);
+     
+
      try {
           const fetchPosts = await Promise.all(
                tags
